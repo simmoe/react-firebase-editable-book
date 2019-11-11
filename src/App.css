@@ -1,22 +1,48 @@
+body{
+  margin:0;
+  padding:0;
+  background-color: #282c34;
+
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+h1.title{
+  text-transform: uppercase;
+  font-size:1rem;
+  color:#444;
 }
-
+h1{
+  font-weight:300;
+}
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width:80vw;
+  margin: 4rem auto;
+  text-align: center;
   font-size: calc(10px + 2vmin);
+  font-weight:300;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.save{
+  cursor: pointer;
+}
+.save svg{
+  transition:.3s ease;
+}
+.save svg:hover{
+  transform:scale(1.1);
+}
+.save svg:active{
+  animation:spinMe 1s;
+}
+@keyframes spinMe{
+  from{
+    transform:rotateX(0deg);
+  }
+  to{
+    transform:rotateX(4turn);
+  }
 }
